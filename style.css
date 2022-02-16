@@ -1,0 +1,188 @@
+body {
+    background-color: #8ee0e6;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+::selection {
+    background-color: #5db7c7;
+}
+
+.title {
+    margin: 10px 5px;
+    text-align: center;
+}
+
+span {
+    color: black;
+    font-size: small;
+    display: inline-block;
+    position: relative;
+    bottom: 8px;
+    background-color: #5db7c7;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+    color: #F2F2F2;
+}
+
+h2 {
+    font-size: medium;
+    text-align: justify;
+    font-weight: 500;
+}
+/*========== FORMULARIO =========*/
+.inputs {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 5px 5px 11px 5px #000000;
+}
+
+/*==== QUITAR FLECHAS ====*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin:0;
+}
+
+.form_label {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 15px;
+}
+
+.form_input {
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px;
+    width: 70%;
+    border-radius: 6px;
+    border-color: #F2F2F2;
+    outline-color: #6DCCF2;
+    color: #6DCCF2;
+}
+
+.form_button {
+    border-radius: 10px;
+    padding: 5px;
+    border-color: #F2F2F2;
+    margin-top: 10px;
+}
+
+.form_button:hover {
+    background-color: #5db7c7;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+.form_alert {
+    visibility: hidden;
+}
+
+.form_alert_color {
+    background-color: #5db7c7;
+    border-radius: 10px 10px 10px 0px;
+    padding-top: 5px;
+    color: #F2F2F2;
+}
+
+.form_icon_error {
+    position: relative;
+    top: 6px;
+    color: #c90a0a;
+}
+
+.result {
+    display: inline-block;
+    position: relative;
+    bottom: 75px;
+    padding: 50px;
+    background-color: #F2F2F2;
+    height: 170px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: -4px;
+    box-shadow: 5px 5px 11px 5px #000000;
+}
+
+.result_bar {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+}
+
+.result_bar_box {
+    display: inline-block;
+    position: absolute;
+}
+
+.result_bar_img {
+    width: 500px;
+}
+
+.result_bar_icon {
+    width: 10px;
+    margin: 5px 0px 10px;
+    position: relative;
+    bottom: 10px;
+    left: 30px;
+}
+
+.result_bar_text {
+    font-size: medium;
+    margin: 0px;
+    position: relative;
+    left: 19px;
+}
+
+.result_bar_none {
+    visibility: hidden;
+}
+
+.result_text_box {
+    position: relative;
+    padding: 0px 50px;
+    top: 30px;
+    width: 80%;
+    height: 100px;
+}
+
+
+
+/*===== RESULTADOS =====*/
+
+.result_hidden {
+    visibility: hidden;
+}
+
+.result_visible {
+    visibility: visible;
+}
+/*Bajo peso*/
+.result_bajo_peso {
+    bottom: 175px;
+    left: 80px;
+    color: #1E73E3;
+}
+
+/*Saludable*/
+.result_saludable {
+    bottom: 175px;
+    left: 208px;
+    color: #23D6E3;
+}
+
+/*Sobre peso*/
+.result_sobrepeso {
+    bottom: 175px;
+    right: 230px;
+    color: #1077A5;
+}
+
+/*Obeso*/
+.result_obeso {
+    bottom: 175px;
+    right: 110px;
+    color: #0D3974;
+}

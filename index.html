@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JS y CSS-->
+    <script src="imc.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--ICONS-->
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div class="inputs">
+        <h1 class="title">Calculadora de IMC</h1>
+        <div>
+            <!--ALTURA-->
+            <div>
+                <div id="form_div_altura">
+                    <label class="form_label" for="altura">Ingrese su altura [m]</label>
+                    <input class="form_input" type="number" name="altura" id="altura" placeholder="ej: 1.70">
+                    <box-icon id="form_icon_error_altura" name='error-circle' animation='tada' color='#F2F2F2' style="visibility: hidden;" class="form_icon_error" ></box-icon>
+                </div>
+                <span id="form_alert_altura" class="form_alert"></span>
+            </div>
+            <!--PESO-->
+            <div>
+                <div id="form_div_peso">
+                    <label class="form_label" for="peso">Ingrese su peso [kg]</label>
+                    <input class="form_input" type="number" name="peso" id="peso" placeholder="ej: 60">
+                    <box-icon id="form_icon_error_peso" name='error-circle' animation='tada' color='#F2F2F2' style="visibility: hidden;" class="form_icon_error" ></box-icon>
+                </div>
+                <span id="form_alert_peso" class="form_alert"></span>
+            </div>
+        </div>
+        <div>
+            <button class="form_button"type="submit" onclick="imc()">Calcular</button>
+        </div>
+    </div>
+
+    <div id="resultado" class="result result_hidden">
+        <div id="result_bar" class="result_bar_box">
+            <h2 id="result_bar_text" class="result_bar_text">Tu IMC: 15</h2>
+            <box-icon class="result_bar_icon" name='down-arrow' type='solid' animation='fade-down' color='#2f9aad' ></box-icon>
+        </div>
+        <div class="result_bar">
+            <img src="src/img/bar.png" class="result_bar_img" alt="bar">
+        </div>
+        <div class="result_text_box">
+            <h2 id="IMC"></h2>
+            <h2 id="estado-peso"></h2>
+        </div>
+    </div>
+</body>
+</html>
